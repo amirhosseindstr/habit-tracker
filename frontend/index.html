@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Habit Tracker 🔥</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Habit Tracker</h1>
+    <p class="subtitle">هر روز یه قدم کوچیک، یه streak بزرگ</p>
+
+    <form id="add-form">
+      <input type="text" id="habit-name" placeholder="اسم عادت جدید..." required>
+      <select id="habit-icon">
+        <option value="🔥">🔥 عمومی</option>
+        <option value="💪">💪 ورزش</option>
+        <option value="📚">📚 مطالعه</option>
+        <option value="🧘">🧘 مدیتیشن</option>
+        <option value="💧">💧 آب</option>
+        <option value="😴">😴 خواب</option>
+      </select>
+      <button type="submit">افزودن</button>
+    </form>
+
+    <div id="habit-list" class="habit-list">
+      <!-- کارت‌های عادت اینجا رندر می‌شوند -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
