@@ -162,9 +162,6 @@ habits                          habit_logs
 - [ ] لاگ متمرکز با **Loki** یا **ELK**
 - [ ] تست‌های خودکار (unit test برای منطق streak، integration test برای API)
 
-### 📄 لایسنس
-
-MIT
 
 ---
 
@@ -309,7 +306,3 @@ The project is kept intentionally simple so the architecture stays legible. Good
 - [ ] Monitoring with **Prometheus + Grafana**
 - [ ] Centralized logging with **Loki** or **ELK**
 - [ ] Automated tests (unit tests for streak logic, integration tests for the API)
-
-### 📄 License
-
-MIT
