@@ -149,19 +149,6 @@ habits                          habit_logs
 
 منطق **streak** در `backend/app/main.py` به این شکله: از امروز (یا دیروز، اگه امروز هنوز ثبت نشده) به عقب حرکت می‌کنه و تا زمانی که روزهای پشت‌سرهم در `habit_logs` وجود داشته باشن، شمارش ادامه پیدا می‌کنه.
 
-### 🗺️ قدم بعدی‌ها برای بالابردن سطح DevOps
-
-این پروژه عمداً ساده نگه داشته شده تا معماری واضح بمونه. برای تمرین بیشتر می‌تونی این‌ها رو اضافه کنی:
-
-- [ ] **CI/CD** با GitHub Actions (build + lint + test خودکار روی هر push)
-- [ ] **Multi-stage Docker build** برای کوچیک‌تر شدن image بک‌اند
-- [ ] **HTTPS** با Let's Encrypt / certbot در nginx
-- [ ] **Healthcheck** اختصاصی برای سرویس backend (نه فقط db)
-- [ ] جدا کردن `docker-compose.prod.yml` برای دیپلوی روی VPS
-- [ ] مانیتورینگ با **Prometheus + Grafana**
-- [ ] لاگ متمرکز با **Loki** یا **ELK**
-- [ ] تست‌های خودکار (unit test برای منطق streak، integration test برای API)
-
 
 ---
 
@@ -293,16 +280,3 @@ habits                          habit_logs
 ```
 
 The **streak** logic in `backend/app/main.py` walks backward from today (or yesterday, if today isn't logged yet) and keeps counting as long as consecutive days exist in `habit_logs`.
-
-### 🗺️ Roadmap / DevOps Next Steps
-
-The project is kept intentionally simple so the architecture stays legible. Good next steps for going further:
-
-- [ ] **CI/CD** with GitHub Actions (automated build + lint + test on every push)
-- [ ] **Multi-stage Docker build** to shrink the backend image
-- [ ] **HTTPS** via Let's Encrypt / certbot in nginx
-- [ ] Dedicated **healthcheck** for the backend service (not just the DB)
-- [ ] A separate `docker-compose.prod.yml` for VPS deployment
-- [ ] Monitoring with **Prometheus + Grafana**
-- [ ] Centralized logging with **Loki** or **ELK**
-- [ ] Automated tests (unit tests for streak logic, integration tests for the API)
